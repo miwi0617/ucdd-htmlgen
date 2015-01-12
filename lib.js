@@ -10,7 +10,13 @@ lib.generateHeading = function(level, text) {
 }
 
 lib.generateOrderedList = function(arrayOfText) {
-    return "not yet implemented"
+ 	var myString = "<ol>";
+ 	for(var i = 0; i < arrayOfText.length; i++)
+ 	{
+ 		myString += "<li>" + arrayOfText[i] + "</li>";
+ 	}
+ 	myString += "</ol>";
+ 	return myString
 }
 
 lib.generateUnorderedList = function(arrayOfText) {
