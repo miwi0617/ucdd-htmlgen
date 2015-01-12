@@ -14,7 +14,12 @@ lib.generateOrderedList = function(arrayOfText) {
 }
 
 lib.generateUnorderedList = function(arrayOfText) {
-    return "not yet implemented"
+    var list = "<ul>"
+    for (var i = 0; i < arrayOfText.length; i++) {
+    	list += "<li>" + arrayOfText[i] + "</li>"
+    }
+    list += "</ul>"
+    return list
 }
 
 lib.generateTableRow = function (arrayOfText) {
