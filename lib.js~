@@ -38,16 +38,10 @@ lib.generateTableRow = function (arrayOfText) {
 }
 
 lib.generateTable = function(twoDimensionalArrayOfText) {
-var list = "<td>"
-   for (var i = 0; i<twoDimensionalArrayOfText.length; i++) {
-	for (var j = 0; j<twoDimensionalArrayOfText[i]; j++) {
-	   
-	   list += twoDimensionalArrayOfText[i][j]
-           
-        }
-   
-   }
-list += "</td>"
+    var list = ""
+    for (var i = 0; i < twoDimensionalArrayOfText[1].length; i++) {
+	list += "<td>" + twoDimensionalArrayOfText[1][i] + "</td>"
+    }
     return list
 }
 
